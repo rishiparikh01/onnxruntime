@@ -43,6 +43,9 @@ REG_ARRAYFEATUREEXTRACTOR(double);
 REG_ARRAYFEATUREEXTRACTOR(int32_t);
 REG_ARRAYFEATUREEXTRACTOR(int64_t);
 REG_ARRAYFEATUREEXTRACTOR(string);
+REG_ARRAYFEATUREEXTRACTOR(std::map<string, float>);
+
+
 
 template <typename T>
 ArrayFeatureExtractorOp<T>::ArrayFeatureExtractorOp(const OpKernelInfo& info)
